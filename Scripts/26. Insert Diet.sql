@@ -1,0 +1,18 @@
+INSERT INTO public."DIET"("NAME_ES", "NAME_EN", "SPECIE_ID") VALUES
+('Barf','Barf','1'),
+('Concentrado Perro Obeso','Concentrado Perro Obeso','1'),
+('Concentrado Perro Engorde','Concentrado Perro Engorde','1'),
+('Concentrado Perro Cachorro','Concentrado Perro Cachorro','1'),
+('Concentrado Perro Adulto','Concentrado Perro Adulto','1'),
+('Concentrado Perro Diabetico ','Concentrado Perro Diabetico ','1'),
+('Alimento Casero','Alimento Casero','1'),
+('Concentrado insuficiencia Renal','Concentrado insuficiencia Renal','1'),
+('Otra','Otra','1'),
+('Concentrado Gato Obeso','Concentrado Gato Obeso','2'),
+('Concentrado Gato Engorde','Concentrado Gato Engorde','2'),
+('Concentrado Gato Cachorro','Concentrado Gato Cachorro','2'),
+('Concentrado Gato Adulto','Concentrado Gato Adulto','2'),
+('Concentrado Gato Diabetico ','Concentrado Gato Diabetico ','2'),
+('Alimento Casero','Alimento Casero','2'),
+('Concentrado insuficiencia Renal','Concentrado insuficiencia Renal','2'),
+('Otra','Otra','2');

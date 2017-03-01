@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database connection settings -->
+		<!--
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/Mocatto</property>
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.connection.password">admin</property>
+		-->
+		<!-- CUENTA MOCATTO PETS -->
+		
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://ec2-50-17-227-146.compute-1.amazonaws.com:5432/ds043rd81mcaq</property>
+		<property name="hibernate.connection.username">itdoyysrgaedeh</property>
+		<property name="hibernate.connection.password">KPtg9_EAqNtmk1leFTS2lh4-Ue</property>
+		
+		
+		<property name="hibernate.c3p0.min_size">5</property>
+		<property name="hibernate.c3p0.max_size">15</property>
+		<property name="hibernate.c3p0.timeout">1800</property>
+		<property name="hibernate.c3p0.max_statements">50</property>
+		
+		<!-- SQL dialect -->
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+		<!-- <property name="hibernate.default_schema">public</property> -->
+
+		<!-- Disable the second-level cache -->
+		<property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+
+		<!-- Eliminate all the quotes used by postgress in the queries -->
+		<property name="hibernate.globally_quoted_identifiers">true</property>
+
+		<!-- Names the annotated entity class -->
+		<mapping class="com.mocatto.db.PetDAO" />
+		<mapping class="com.mocatto.db.UserDAO" />
+		<mapping class="com.mocatto.db.LocationDAO" />
+		<mapping class="com.mocatto.db.RaceDAO" />
+		<mapping class="com.mocatto.db.FoodBrandDAO" />
+		<mapping class="com.mocatto.db.DietDAO" />
+		<mapping class="com.mocatto.db.CountryDAO" />
+		<mapping class="com.mocatto.db.CityDAO" />
+		<mapping class="com.mocatto.db.TopicDAO" />
+		<mapping class="com.mocatto.db.CommentDAO" />
+		<mapping class="com.mocatto.db.AdvertisingDAO" />
+		
+	</session-factory>
+</hibernate-configuration>
